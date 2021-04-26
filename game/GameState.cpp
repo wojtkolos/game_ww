@@ -2,9 +2,7 @@
 
 GameState::GameState(sf::RenderWindow* window) 
 	: State(window)
-{
-
-}
+	{}
 
 GameState::~GameState() 
 {
