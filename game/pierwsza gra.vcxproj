@@ -113,7 +113,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>D:\SFML-2.5.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>winmm.lib;opengl32.lib;freetype.lib;sfml-network-s.lib;sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;sfml-audio-s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-network-s.lib;sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;sfml-audio-s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);sfml-network.lib;sfml-audio.lib;sfml-system.lib;sfml-window.lib;sfml-graphics.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -147,25 +147,88 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>D:\SFML-2.5.1\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>winmm.lib;opengl32.lib;freetype.lib;sfml-network-s.lib;sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;sfml-audio-s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>sfml-network-s.lib;sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;sfml-audio-s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);sfml-network.lib;sfml-audio.lib;sfml-system.lib;sfml-window.lib;sfml-graphics.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BoardSpaces.cpp" />
+    <ClCompile Include="CardDeck.cpp" />
+    <ClCompile Include="CirclePointers.cpp" />
+    <ClCompile Include="CounterTrade.cpp" />
+    <ClCompile Include="DialogBox.cpp" />
+    <ClCompile Include="DialogBoxes.cpp" />
+    <ClCompile Include="DiceAnimation.cpp" />
+    <ClCompile Include="AnimationComponent.cpp" />
+    <ClCompile Include="Bank.cpp" />
+    <ClCompile Include="GameButtons.cpp" />
+    <ClCompile Include="GamePlayers.cpp" />
+    <ClCompile Include="House.cpp" />
+    <ClCompile Include="PauseMenu.cpp" />
+    <ClCompile Include="SpaceActionHandler.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Card.cpp" />
+    <ClCompile Include="CommunityCard.cpp" />
+    <ClCompile Include="ChanceCard.cpp" />
+    <ClCompile Include="Dice.cpp" />
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameSetState.cpp" />
     <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="HugeCard.cpp" />
     <ClCompile Include="MainMenuState.cpp" />
-    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MoneyBalanceTextbox.cpp" />
+    <ClCompile Include="MovementComponent.cpp" />
+    <ClCompile Include="OperationsComponent.cpp" />
+    <ClCompile Include="OptionsState.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="ScoreBoard.cpp" />
+    <ClCompile Include="Space.cpp" />
+    <ClCompile Include="SpaceHouses.cpp" />
     <ClCompile Include="State.cpp" />
+    <ClCompile Include="Textbox.cpp" />
+    <ClCompile Include="Trade.cpp" />
+    <ClCompile Include="TradeComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BoardSpaces.h" />
+    <ClInclude Include="CirclePointers.h" />
+    <ClInclude Include="CardDeck.h" />
+    <ClInclude Include="Coordinates.h" />
+    <ClInclude Include="CounterTrade.h" />
+    <ClInclude Include="DialogBox.h" />
+    <ClInclude Include="DialogBoxes.h" />
+    <ClInclude Include="DiceAnimation.h" />
+    <ClInclude Include="AnimationComponent.h" />
+    <ClInclude Include="Bank.h" />
+    <ClInclude Include="GameButtons.h" />
+    <ClInclude Include="GamePlayers.h" />
+    <ClInclude Include="House.h" />
+    <ClInclude Include="PauseMenu.h" />
+    <ClInclude Include="SpaceActionHandler.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Card.h" />
+    <ClInclude Include="CommunityCard.h" />
+    <ClInclude Include="ChanceCard.h" />
+    <ClInclude Include="Dice.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="GameSetState.h" />
     <ClInclude Include="GameState.h" />
+    <ClInclude Include="MoneyBalanceTextbox.h" />
+    <ClInclude Include="HugeCard.h" />
     <ClInclude Include="MainMenuState.h" />
-    <ClInclude Include="Menu.h" />
+    <ClInclude Include="MovementComponent.h" />
+    <ClInclude Include="OperationsComponent.h" />
+    <ClInclude Include="OptionsState.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="ScoreBoard.h" />
+    <ClInclude Include="Space.h" />
+    <ClInclude Include="SpaceHouses.h" />
     <ClInclude Include="State.h" />
+    <ClInclude Include="Textbox.h" />
+    <ClInclude Include="Trade.h" />
+    <ClInclude Include="TradeComponent.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

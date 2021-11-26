@@ -1,40 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="States">
       <UniqueIdentifier>{52fa66f3-d789-4ada-9124-0f09796b5c70}</UniqueIdentifier>
     </Filter>
     <Filter Include="Entities">
       <UniqueIdentifier>{c59fa8d8-ab16-4240-a29c-2c62911480a5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Components">
+      <UniqueIdentifier>{e8e27dde-5148-4759-91ff-911c38afc685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Bank">
+      <UniqueIdentifier>{cde1a454-576a-47f2-90c4-9ca30af85e01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Player">
+      <UniqueIdentifier>{338b3246-b163-4241-836f-918d38b37ea0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Card">
+      <UniqueIdentifier>{e120a87b-bdb6-49da-b500-34563a631c98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Card\CardMoney">
+      <UniqueIdentifier>{7dc69d70-9956-4f00-9454-b246e856dae8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Card\CardMove">
+      <UniqueIdentifier>{99e32bf7-fa7e-428b-8f37-c444473652cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Dice">
+      <UniqueIdentifier>{e7a8f9c3-333a-4a72-b26f-90334e490e91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Space">
+      <UniqueIdentifier>{b4a03036-7f9b-413b-ad34-302602e6e34e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Button">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Textbox">
+      <UniqueIdentifier>{1e07d0a6-915d-4d0d-939a-a33079aef05e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScoreBoard">
+      <UniqueIdentifier>{66be5f57-6f17-4549-9f0d-421eebd51b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Card\HugeCard">
+      <UniqueIdentifier>{75ae3174-d866-4c13-a419-9e5cc79aa029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States\MenuStates">
+      <UniqueIdentifier>{c47867f6-9c12-4a1a-b49c-13f734afe6f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DialogBox">
+      <UniqueIdentifier>{475496c1-bffa-41cc-bde9-13ad0251d7a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ActionHandler">
+      <UniqueIdentifier>{fa19a979-a18a-493f-acc5-4fff3d3df13e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{cdc6cc16-72e5-4249-a1de-5a946ddf298c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Containers">
+      <UniqueIdentifier>{babedbfb-cc58-47cf-96a6-7a138aa1ebae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Containers\BoardSpaces">
+      <UniqueIdentifier>{7f4d8eeb-c240-4c33-a114-2abc177d7848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Containers\GameButtons">
+      <UniqueIdentifier>{09c171c3-961b-4f97-9ec2-858a1cfd0c56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Containers\GamePlayers">
+      <UniqueIdentifier>{3f8ba3ee-7742-48bb-ace2-9b3ec610e2ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Containers\DialogBoxes">
+      <UniqueIdentifier>{b3dd6056-d22e-499d-bfdc-94406c9822d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\House">
+      <UniqueIdentifier>{7d25868f-e5d9-410b-99b3-ef46a91662e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Containers\SpaceHouses">
+      <UniqueIdentifier>{290d7c7d-43c6-4a40-9bec-57692a5bc539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\TradeComponent">
+      <UniqueIdentifier>{e8155803-7f0a-41db-94e6-419536f08a27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\TradeComponent\Trade">
+      <UniqueIdentifier>{c180c61d-eb59-46b3-8e05-45fa0f814a37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Components\TradeComponent\CounterTrade">
+      <UniqueIdentifier>{cfb9af01-6527-497e-99e2-bfe24f644294}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Menu.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Game</Filter>
     </ClCompile>
     <ClCompile Include="State.cpp">
       <Filter>States</Filter>
     </ClCompile>
-    <ClCompile Include="MainMenuState.cpp">
-      <Filter>States</Filter>
-    </ClCompile>
     <ClCompile Include="Game.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Game</Filter>
     </ClCompile>
     <ClCompile Include="GameState.cpp">
       <Filter>States</Filter>
@@ -42,25 +107,218 @@
     <ClCompile Include="Entity.cpp">
       <Filter>Entities</Filter>
     </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Button</Filter>
+    </ClCompile>
+    <ClCompile Include="MovementComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Bank.cpp">
+      <Filter>Entities\Bank</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceActionHandler.cpp">
+      <Filter>ActionHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Entities\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Dice.cpp">
+      <Filter>Entities\Dice</Filter>
+    </ClCompile>
+    <ClCompile Include="ChanceCard.cpp">
+      <Filter>Entities\Card\CardMove</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>Entities\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="CommunityCard.cpp">
+      <Filter>Entities\Card\CardMoney</Filter>
+    </ClCompile>
+    <ClCompile Include="Space.cpp">
+      <Filter>Entities\Space</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="DiceAnimation.cpp">
+      <Filter>Entities\Dice</Filter>
+    </ClCompile>
+    <ClCompile Include="Textbox.cpp">
+      <Filter>Textbox</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreBoard.cpp">
+      <Filter>ScoreBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="CardDeck.cpp">
+      <Filter>Entities\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="HugeCard.cpp">
+      <Filter>Entities\Card\HugeCard</Filter>
+    </ClCompile>
+    <ClCompile Include="MoneyBalanceTextbox.cpp">
+      <Filter>Textbox</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSetState.cpp">
+      <Filter>States\MenuStates</Filter>
+    </ClCompile>
+    <ClCompile Include="MainMenuState.cpp">
+      <Filter>States\MenuStates</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsState.cpp">
+      <Filter>States\MenuStates</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogBox.cpp">
+      <Filter>DialogBox</Filter>
+    </ClCompile>
+    <ClCompile Include="CirclePointers.cpp">
+      <Filter>ScoreBoard</Filter>
+    </ClCompile>
+    <ClCompile Include="OperationsComponent.cpp">
+      <Filter>Components</Filter>
+    </ClCompile>
+    <ClCompile Include="PauseMenu.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="GameButtons.cpp">
+      <Filter>Containers\GameButtons</Filter>
+    </ClCompile>
+    <ClCompile Include="BoardSpaces.cpp">
+      <Filter>Containers\BoardSpaces</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePlayers.cpp">
+      <Filter>Containers\GamePlayers</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogBoxes.cpp">
+      <Filter>Containers\DialogBoxes</Filter>
+    </ClCompile>
+    <ClCompile Include="House.cpp">
+      <Filter>Entities\House</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceHouses.cpp">
+      <Filter>Containers\SpaceHouses</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeComponent.cpp">
+      <Filter>Components\TradeComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Trade.cpp">
+      <Filter>Components\TradeComponent\Trade</Filter>
+    </ClCompile>
+    <ClCompile Include="CounterTrade.cpp">
+      <Filter>Components\TradeComponent\CounterTrade</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Menu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="State.h">
       <Filter>States</Filter>
-    </ClInclude>
-    <ClInclude Include="MainMenuState.h">
-      <Filter>States</Filter>
-    </ClInclude>
-    <ClInclude Include="Game.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GameState.h">
       <Filter>States</Filter>
     </ClInclude>
     <ClInclude Include="Entity.h">
       <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Button</Filter>
+    </ClInclude>
+    <ClInclude Include="MovementComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Bank.h">
+      <Filter>Entities\Bank</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceActionHandler.h">
+      <Filter>ActionHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Entities\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Dice.h">
+      <Filter>Entities\Dice</Filter>
+    </ClInclude>
+    <ClInclude Include="ChanceCard.h">
+      <Filter>Entities\Card\CardMove</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>Entities\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="CommunityCard.h">
+      <Filter>Entities\Card\CardMoney</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Space.h">
+      <Filter>Entities\Space</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="DiceAnimation.h">
+      <Filter>Entities\Dice</Filter>
+    </ClInclude>
+    <ClInclude Include="Textbox.h">
+      <Filter>Textbox</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreBoard.h">
+      <Filter>ScoreBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="CardDeck.h">
+      <Filter>Entities\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="HugeCard.h">
+      <Filter>Entities\Card\HugeCard</Filter>
+    </ClInclude>
+    <ClInclude Include="MoneyBalanceTextbox.h">
+      <Filter>Textbox</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSetState.h">
+      <Filter>States\MenuStates</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenuState.h">
+      <Filter>States\MenuStates</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionsState.h">
+      <Filter>States\MenuStates</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogBox.h">
+      <Filter>DialogBox</Filter>
+    </ClInclude>
+    <ClInclude Include="CirclePointers.h">
+      <Filter>ScoreBoard</Filter>
+    </ClInclude>
+    <ClInclude Include="OperationsComponent.h">
+      <Filter>Components</Filter>
+    </ClInclude>
+    <ClInclude Include="PauseMenu.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GameButtons.h">
+      <Filter>Containers\GameButtons</Filter>
+    </ClInclude>
+    <ClInclude Include="BoardSpaces.h">
+      <Filter>Containers\BoardSpaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Coordinates.h" />
+    <ClInclude Include="GamePlayers.h">
+      <Filter>Containers\GamePlayers</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogBoxes.h">
+      <Filter>Containers\DialogBoxes</Filter>
+    </ClInclude>
+    <ClInclude Include="House.h">
+      <Filter>Entities\House</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceHouses.h">
+      <Filter>Containers\SpaceHouses</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeComponent.h">
+      <Filter>Components\TradeComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Trade.h">
+      <Filter>Components\TradeComponent\Trade</Filter>
+    </ClInclude>
+    <ClInclude Include="CounterTrade.h">
+      <Filter>Components\TradeComponent\CounterTrade</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

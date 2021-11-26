@@ -3,41 +3,92 @@
 //Static functions
 
 //Initializer functions
+void Game::initVariables() 
+{
+	this->window = nullptr;
+	this->fullscreen = false;
+	this->dt = 0;
+}
+
+
 void Game::initWindow()
 {
 	//Creates a SFML window using .ini
 	std::ifstream ifs("Config/window.ini");
+	this->videoModes = sf::VideoMode::getFullscreenModes();
 
 	std::string title = "None";
-	sf::VideoMode window_bounds(650, 650);
+	sf::VideoMode window_bounds = sf::VideoMode::getDesktopMode();
+	bool fullscreen = false;
 	unsigned framerate_limit = 120;
 	bool vertical_sync_enabled = false;
+	unsigned antialiasing_level = 0;
 
 	if (ifs.is_open()) 
 	{
 		std::getline(ifs, title);
 		ifs >> window_bounds.width >> window_bounds.height;
+		ifs >> fullscreen;
 		ifs >> framerate_limit;
 		ifs >> vertical_sync_enabled;
+		ifs >> antialiasing_level;
 	}
 
 	ifs.close();
 
-	//sf::ContextSettings::
-	this->window = new sf::RenderWindow(window_bounds, title, sf::Style::Default | sf::Style::Close);
+	
+	this->fullscreen = false;
+	windowSettins.antialiasingLevel = antialiasing_level;
+
+	if (fullscreen)
+		this->window = new sf::RenderWindow(window_bounds, title, sf::Style::Fullscreen , windowSettins);
+	else
+		this->window = new sf::RenderWindow(window_bounds, title, sf::Style::Titlebar | sf::Style::Close, windowSettins);
+		
 	this->window->setFramerateLimit(framerate_limit);
+	this->window->setKeyRepeatEnabled(false);
 	this->window->setVerticalSyncEnabled(vertical_sync_enabled);
+}
+
+void Game::initKeys()
+{
+	std::ifstream ifs("Config/supported_keys.ini");
+	if (ifs.is_open())
+	{
+		std::string key = "";
+		int key_value = 0;
+		while (ifs >> key >> key_value) 
+		{
+			this->supportedKeys[key] = key_value;
+		}
+	}
+	else
+	{
+		this->supportedKeys["Escape"] = sf::Keyboard::Key::Escape;
+		this->supportedKeys["A"] = sf::Keyboard::Key::A;
+		this->supportedKeys["D"] = sf::Keyboard::Key::D;
+		this->supportedKeys["W"] = sf::Keyboard::Key::W;
+		this->supportedKeys["S"] = sf::Keyboard::Key::S;
+	}
+	//DEBUG
+	for (auto i : this->supportedKeys)
+	{
+		std::cout << i.first << " " << i.second << "\n";
+	}
 }
 
 void Game::initStates() 
 {
-	this->states.push(new GameState(this->window));
+	this->states.push(new MainMenuState(this->window, &this->supportedKeys, &this->states, &this->sfEvent));
 }
+
 
 //Constructors/Destructors
 Game::Game() 
 {
+	this->initVariables();
 	this->initWindow();
+	this->initKeys();
 	this->initStates();
 }
 
@@ -53,6 +104,11 @@ Game::~Game()
 }
 
 //Functions
+//sf::Clock Game::getDtClock()
+//{
+//	
+//}
+
 
 //Regular
 void Game::endApplication()
@@ -78,6 +134,8 @@ void Game::updateSFMLEvents()
 		{
             this->window->close();
         }
+
+
     }
 }
 

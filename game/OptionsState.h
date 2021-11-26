@@ -1,36 +1,25 @@
 #pragma once
-#define MAINMENUSTATE_H
 
-#include "GameSetState.h"
+#define OPTIONSSTATE_H
+#include "SpaceActionHandler.h"
 
-
-
-
-class MainMenuState :
+class OptionsState :
 	public State
-{ 
+{
 private:
-	
 	//Variables
 	sf::Texture backgroundTexture;
-	sf::Font font;
 	sf::RectangleShape background;
+	sf::Font font;
 	std::map<std::string, Button*> buttons;
 
-	short selectedIndex;
 	//Functions
-	void moveDown();
-	void moveUp();
-
-	void initVariables();
 	void initBackground();
-	void initMusic();
-	void initFonts();
 	void initKeyBinds();
 	void initButtons();
 public:
-	MainMenuState(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*>* states, sf::Event* sfEvent);
-	virtual ~MainMenuState();
+	OptionsState(sf::RenderWindow* window, std::map<std::string, int>* supportedKeys, std::stack<State*>* states, sf::RectangleShape& background, sf::Font& font, sf::Event* sfEvent);
+	virtual ~OptionsState();
 
 	//Functions
 	void updateInput(const float& dt);
@@ -38,4 +27,5 @@ public:
 	void update(const float& dt);
 	void renderButtons(sf::RenderTarget* traget = nullptr);
 	void render(sf::RenderTarget* traget = nullptr);
+
 };
